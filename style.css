@@ -30,6 +30,7 @@ body {
     z-index: 99;
     top: 50%;
     left: 50%;
+    transition: .5s;
     transform: translate(-50%, -50%);
 
 }
@@ -75,35 +76,51 @@ p {
     font-weight: bold;
     margin: 10px;
 }
-@media (max-width:900px) {
+@media (min-width:900px) {
     .container .time_area span, p{
         font-size: 400%;
     }
     .container .days span{
-        font-size: 400%;
+        font-size: 300%;
      }
 }
 @media (max-width:700px) {
+    
     .container .time_area span, p{
         font-size: 300%;
     }
     .container .days span{
-        font-size: 300%;
+        font-size: 200%;
      }
 }
 @media (max-width:500px) {
-    .container .time_area span, p{
-        font-size: 200%;
+    .container .time_area span{
+        font-size: 6em;
+    }
+    .container .time_area p{
+        display: none;
     }
     .container .days span{
         font-size: 200%;
      }
+     .container .time_area{
+        flex-direction: column;
+    }
 }
 @media (max-width:350px) {
-    .container .time_area span, p{
-        font-size: 100%;
+    .container .time_area span{
+        font-size: 3em;
+    }
+    .container{
+        width: 90%;
+    }
+    .container .time_area p{
+        display: none;
     }
     .container .days span{
-        font-size: 100%;
+        font-size:100%;
      }
+     .container .time_area{
+        flex-direction: column;
+    }
 }
