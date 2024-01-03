@@ -101,10 +101,13 @@ p {
         display: none;
     }
     .container .days span{
-        font-size: 200%;
+        font-size: 150%;
      }
      .container .time_area{
         flex-direction: column;
+    }
+    .container{
+        width: 90%;
     }
 }
 @media (max-width:350px) {
